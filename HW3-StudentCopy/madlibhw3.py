@@ -24,15 +24,18 @@ if debug:
 	print ("Getting information from file madlib_test.txt...\n")
 
 str1 =  (text2[:151])
-print (str1)
+
 para = ' '.join(str1)
+print ("\n")
+print("First version of the text - unedited\n")
 print (para)
+#print (para)
 tokens = nltk.word_tokenize(para)
-print("TOKENS")
-print(tokens)
+#print("TOKENS")
+#print(tokens)
 tagged_tokens = nltk.pos_tag(tokens) # gives us a tagged list of tuples
-print("TAGGED TOKENS")
-print(tagged_tokens)
+#print("TAGGED TOKENS")
+#print(tagged_tokens)
 if debug:
 	print ("First few tagged tokens are:")
 	for tup in tagged_tokens[:5]:
@@ -56,7 +59,7 @@ for (word, tag) in tagged_tokens:
 	else:
 		new_word = input("Please enter %s:\n" % (tagmap[tag]))
 		final_words.append(spaced(new_word))
-
+print ('Edited madlib version of text \n')
 print ("".join(final_words))
 
 print("\n\nEND*******")

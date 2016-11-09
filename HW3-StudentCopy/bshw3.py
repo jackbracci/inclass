@@ -32,11 +32,11 @@ for student in findword:
 
 
 # Part 2 
-for links in soup.findAll('iframe'):
+for links in soup.find_all('iframe'):
 	links['src'] = "/Users/JonathanBracci/Desktop/problemset3/SI206/Barcelona.jpg"
 
 # Part 3
-for image in soup.findAll('img'):
+for image in soup.find_all('img'):
 	image['src'] = "/Users/JonathanBracci/Desktop/problemset3/SI206/HW3-StudentCopy/Media/logo.png"
 
 new_html_file = open("HW3_BS_OutPut.html", "w")
