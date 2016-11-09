@@ -9,24 +9,22 @@
 # Deliverables:
 # 1) Print the orginal text (150 tokens)
 # 1) Print the new text
-print("START*******")
+print("*START**")
 import nltk
 from nltk.book import *
 import random
 from nltk import word_tokenize,sent_tokenize
 
-nltk.download('punkt')
 
 
 debug = False #True
 
-# get file from user to make mad lib out of
+
 if debug:
 	print ("Getting information from file madlib_test.txt...\n")
-#fname = "text2" # need a file with this name in directory
-#f = open(fname, 'r')
-str1 =  (text2[:150])
-# print (para)
+
+str1 =  (text2[:151])
+print (str1)
 para = ' '.join(str1)
 print (para)
 tokens = nltk.word_tokenize(para)
