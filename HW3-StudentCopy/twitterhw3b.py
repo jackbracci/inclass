@@ -1,4 +1,4 @@
-#
+
 # In this assignment you must do a Twitter search on any term
 # of your choice.
 # Deliverables:
